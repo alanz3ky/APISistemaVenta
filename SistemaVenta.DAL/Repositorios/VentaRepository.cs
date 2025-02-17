@@ -75,5 +75,5 @@ namespace SistemaVenta.DAL.Repositorios
             }
 
         }
-    }
+    } 
 }
