@@ -4,6 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 using SistemaVenta.DAL.DBContext;
 using SistemaVenta.DAL.Repositorios.Contrato;
 using SistemaVenta.DAL.Repositorios;
+using SistemaVenta.Utility;
 
 using System;
 using System.Collections.Generic;
@@ -26,6 +27,7 @@ namespace SistemaVenta.IOC
 
             services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.AddScoped<IVentaRepository, VentaRepository>();
+            services.AddAutoMapper(typeof(AutoMapperProfile));
         }
     }
 }
