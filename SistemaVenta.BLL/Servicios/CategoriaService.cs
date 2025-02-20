@@ -16,10 +16,10 @@ namespace SistemaVenta.BLL.Servicios
 {
  public class CategoriaService : ICategoriaService
     {
-        private readonly IGenericRepository<Rol> _categoriaRepositorio;
+        private readonly IGenericRepository<Categoria> _categoriaRepositorio;
         private readonly IMapper _mapper;
 
-        public CategoriaService(IGenericRepository<Rol> categoriaRepositorio, IMapper mapper)
+        public CategoriaService(IGenericRepository<Categoria> categoriaRepositorio, IMapper mapper)
         {
             _categoriaRepositorio = categoriaRepositorio;
             _mapper = mapper;
